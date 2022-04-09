@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,489&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 400;
+    color: #111;
+}
+
+/* .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/bannerCharity.jpg");
+    background-size: cover;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 120px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.5px 5.5px rgba(0, 0, 0, 0.05),
+        0 13px 11px rgba(0, 0, 0, 0.1);
+}
+
+header .sticky {
+    background: rgb(24, 22, 22);
+    padding: 15px 100px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #111;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .sticky .logo {
+    color: rgb(255, 255, 255);
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    font-weight: 500;
+}
+
+header.sticky .navigation li a {
+    color: rgb(240, 237, 237);
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+.myImage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/bannerCharity.jpg");
+    background-size: cover;
+}
+
+.myImage .content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.myImage h1 {
+    font-size: 100px;
+    color: #f91a1a
+}
+
+.myImage p {
+    color: rgb(201, 127, 127);
+    font-weight: bold;
+}
+
+.theSay {
+    background: url("/images/")
+}
+
+
+.footer {
+    padding: 20px;
+    border-top: 1px solid rgb(152, 147, 147);
+}
