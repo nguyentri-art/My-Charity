@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../css/historyEvent.css">
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="container__history">
+                <h1>History <span>E</span>vent </h1>
+                <p class="onHeader">This note everytime a volunteer ,a philanthropist have donation.
+                    See all activities of event
+                </p>
+                <div class="container__listDetail">
+                    <% for(let histo of prods) { %>
+                        <div class="container__boxDetail">
+                            <h3>Name Event: </h3>
+                            <p>
+                                <%= histo.idEvent %>
+                            </p>
+                            <h3>Total Money: </h3>
+                            <p>
+                                <%= histo.total %><span>$</span>
+                            </p>
+                            <h3>From :</h3>
+                            <p>
+                                <%= histo.first_name %>
+                                    <%= histo.last_name %>
+                            </p>
+                        </div>
+                        <% } %>
+                </div>
+                <div class="container__galary">
+                    <h3>Here for Galary we do </h3>
+                </div>
+            </div>
+
+
+            <%- include('./end.ejs') %>

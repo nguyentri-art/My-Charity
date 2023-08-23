@@ -1,0 +1,32 @@
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="container__signIn">
+                <p>Signing in as a member you can create events to donate, and you can discuss, share your views and
+                    contribute more to us as humans.
+                    (Đăng nhập với tư cách thành viên bạn có thể tạo sự kiện để quyên góp, đồng thời bạn
+                    có thể bàn luận chia sẽ quan điểm và đóng góp nhiều hơn cho con người chúng ta.)</p>
+                <% if(errorMessage) { %>
+                    <div class="user-message user-message-error">
+                        <%= errorMessage %>
+                    </div>
+                    <%} %>
+                        <form class="singIn__form" method="POST">
+                            <div>
+                                <label for="email">Email-</label>
+                                <input class="<%= validationErrors.find(e => e.param === 'email') ? 'invalid' : '' %>"
+                                    type="text" placeholder="Email" name="email" value="<%= oldInput.email %>"
+                                    required="true">
+                                <label for="password">Password-</label>
+                                <input class="<%= validationErrors.find(e => e.param === 'password') ? 'invalid' :'' %>"
+                                    value="<%= oldInput.password %>" name="password" type="password" required="false"
+                                    placeholder="Password" minlength="5" maxlength="20">
+                            </div>
+                            <button type="submit" class="btn__signIn">Go in...</button>
+                        </form>
+                        <a href="/signUp">Don't have account yet? Sign up now.</a>
+            </div>
+
+            <%- include('./end.ejs') %>

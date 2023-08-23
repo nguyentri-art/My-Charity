@@ -1,0 +1,37 @@
+<header class="header" id="header">
+    <div class="theLogo">
+        <a href="/" class="logo"><span>.</span>humanity</a>
+    </div>
+    <ul class="navigation">
+        <li>
+            <a href="/eventDonation"
+                class="<%= (path === '/eventDonation' || path === '/detailDonation' || path === '/updateDonation')  ? 'active' : '' %>">Donation
+                Event</a>
+        </li>
+        <li>
+            <a href="/aboutUs" class="<%= path === '/aboutUs' ? 'active' : '' %>">About Us</a>
+        </li>
+        <% if(isAdmin && isAuthenticated){ %>
+            <li>
+                <a href="/createEvent" class="<%= path === '/createEvent' ? 'active' : '' %>">Create Event</a>
+            </li>
+            <%} %>
+                <li>
+                    <a href="/historyEvent" class="<%= path === '/historyEvent' ? 'active' : '' %>">History Event</a>
+                </li>
+                <% if(!isAuthenticated) { %>
+                    <li>
+                        <a href="/signIn" class="<%= path === '/signIn' ? 'active'  : '' %>">Sign In</a>
+                    </li>
+                    <% } else { %>
+                        <!-- form action method post -->
+                        <li>
+                            <form action="/signOut" method="POST">
+                                <button type="submit">Sign Out</button>
+                            </form>
+                        </li>
+                        <% } %>
+                            <!-- form action method post -->
+    </ul>
+
+</header>

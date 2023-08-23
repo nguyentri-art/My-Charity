@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,489&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 400;
+    color: #111;
+}
+
+/* .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/bannerCharity.jpg");
+    background-size: cover;
+} */
+/* Header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 120px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    background-color: white;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.5px 5.5px rgba(0, 0, 0, 0.05),
+        0 13px 11px rgba(0, 0, 0, 0.1);
+}
+
+header .sticky {
+    background: rgb(24, 22, 22);
+    padding: 15px 100px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #111;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    opacity: 1;
+}
+
+header .sticky .logo {
+    color: rgb(255, 255, 255);
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    font-weight: 500;
+    opacity: 1;
+}
+
+header .navigation li a:active,
+header .navigation li a.active {
+    font-weight: 800;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+header.sticky .navigation li a {
+    color: rgb(240, 237, 237);
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+header .navigation .theLogo .logo span {
+    font-weight: 1000;
+}
+
+header .navigation li button {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .navigation li button:hover {
+    color: #ff0157;
+    cursor: pointer;
+}
+
+/* Header*/
+
+.myImage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/africaboy.jpg");
+    background-size: cover;
+}
+
+.myImage .content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.myImage h1 {
+    font-size: 100px;
+    color: #f91a1a
+}
+
+.myImage p {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.theySay {
+    background: url("/images/bannerAnimated.jpg");
+    background-size: cover;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white .titleText,
+.white p {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.theySay__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.theySay__content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.theySay__content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.theySay__content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theySay__content .box .text {
+    text-align: center;
+}
+
+.testimonials .content .box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .box .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.title-Banker {
+    z-index: 1;
+}
+
+.bankConnecting {
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+
+.title-Banker {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(15, 11, 11);
+    font-weight: 700;
+}
+
+.title-Banker span {
+    color: #f91a1a;
+}
+
+#videosBG {
+    border-radius: 30px;
+    margin-top: -1050px;
+    max-height: 250vh;
+    max-width: auto;
+    opacity: 0.4;
+}
+
+.box__Bank {
+    display: grid;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__Bank .imageBank {
+    z-index: 1;
+    opacity: 0.7;
+    padding: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    transition: 0.2s ease-in-out;
+}
+
+.box__Bank .imageBank:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.box__Bank .imageBank img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Sign In */
+.container__signIn {
+    display: grid;
+    position: relative;
+    height: 900px;
+    background-image: url("/images/SignIn.jpg");
+    background-size: cover;
+}
+
+.container__signIn p {
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.singIn__form {
+    text-align: center;
+}
+
+.singIn__form input {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.singIn__form label {
+    font-size: 20px;
+    color: white;
+}
+
+.singIn__form .btn__signIn {
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.singIn__form .btn__signIn:hover {
+    letter-spacing: 5px;
+}
+
+.container__signIn a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Sign In */
+
+/* Donation */
+.donation__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#myVideoDonation {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content__banner {
+    position: relative;
+    margin-top: 300px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+.content__banner h1 {
+    font-size: 50px;
+}
+
+.content__banner p {
+    color: white;
+    padding: 10px;
+}
+
+.content__banner span {
+    color: #ff0157;
+}
+
+.donation__box {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(81, 81, 81);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.donation__box .donation__event {
+    border: 1px solid rgb(81, 81, 81);
+    max-height: auto;
+    max-width: 400px;
+    display: grid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.donation__box .donation__event h4 {
+    color: #ff0157;
+}
+
+.donation__box .donation__event b {
+    color: #f1f1f1;
+}
+
+.donation__box .donation__event a {
+    text-decoration: none;
+    color: #ff0157;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.2s all ease-in-out;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.donation__box .donation__event a:hover {
+    letter-spacing: 3px;
+    color: #ff0134;
+
+}
+
+.donation__box .donation__event img {
+    height: 350px;
+    width: 400px;
+}
+
+.donation__chatBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.donation__chatting {
+    border: 1px solid rgb(146, 142, 142, 0.5);
+    max-width: 100%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+.donation__chatting h4 {
+    padding: 10px;
+    color: #ff0134;
+}
+
+.donation__chatting p {
+    word-wrap: break-word;
+}
+
+.donation__inputChat {
+    padding: 20px;
+    margin: 20px;
+}
+
+.donation__inputChat button {
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.donation__inputChat input {
+    font-size: 20px;
+    height: 40px;
+    width: 500px;
+}
+.donation__inputChat button {
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.donation__inputChat button:hover {
+    letter-spacing: 3px;
+}
+.donation__box .donation_event h4 {
+    
+}
+
+/* Donation */
+/* About Us */
+.aboutUs__container {
+    min-height: 1000px;
+    min-width: 1000px;
+    background-size: cover;
+    background-image: url(/images/aboutUs.jpg);
+}
+
+.aboutUs__box {
+    padding-top: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUs__box h2 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.aboutUs__box span {
+    color: #f91a1a;
+}
+
+.aboutUs__box p {
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(190, 187, 187);
+}
+
+/* About Us */
+
+/* Sign Up */
+.signUp__container {
+    background-image: url(/images/signUp.jpg);
+    background-size: cover;
+    min-height: 1000px;
+    min-width: 800px;
+}
+
+.signUp__container form {
+    padding: 300px;
+    display: grid;
+
+}
+
+.form__signUp {
+    display: grid;
+}
+
+.form__signUp label {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.form__signUp input {
+    font-size: 20px;
+}
+
+.form__signUp button {
+    margin: 40px 0px;
+    padding: 10px;
+    max-width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form__signUp button:hover {
+    color: white;
+    letter-spacing: 3px;
+    background-color: rgb(58, 57, 57);
+}
+
+/* Sign Up */
+
+/* Detail Event */
+.detailDonation__container {
+    background-image: url("/images/background-edit.jpg");
+    background-size: cover;
+}
+
+.detailDonation__box {
+    padding-top: 300px;
+    padding-bottom: 500px;
+}
+
+.detailDonation__box .detailDonation__content {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.detailDonation__box .detailDonation__content h3 {
+    font-size: 30px;
+    color: rgb(243, 86, 86);
+}
+
+.detailDonation__box .detailDonation__content h3 p {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-style:italic;
+}
+
+.detailDonation__box .detailDonation__content h3 span {
+    color: #ff0134;
+}
+
+.detailDonation__box .detailDonation__content img {
+    max-width: auto;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.detailDonation__box .detailDonation__content button {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.detailDonation__tutorial {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 100px 20px;
+}
+
+.detailDonation__content a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 31, 31);
+    font-weight: 700;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.detailDonation__content a:hover {
+    letter-spacing: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.update__button {
+    padding-top: 20px;
+}
+
+.update__button form input {
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    font-weight: 800;
+    color: #ff0157;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.update__button form input:hover {
+    box-shadow:
+        0 4px 4px rgba(0, 0, 0, 0.05),
+        0 10px 6.8px rgba(0, 0, 0, 0.08),
+        0 15px 12px rgba(0, 0, 0, 0.1),
+        0 22.3px 20px rgba(0, 0, 0, 0.12),
+        0 45px 40px rgba(0, 0, 0, 0.18),
+        0 150px 100px rgba(0, 0, 0, 0.2)
+}
+
+/* Detail Event */
+
+/* user-message */
+.user-message {
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+
+}
+
+/* user-message */
+
+/* footer */
+.footer {
+    padding: 20px;
+    border-top: 1px solid rgb(224, 208, 208);
+    justify-content: center;
+    align-content: center;
+}
+
+/* footer */
