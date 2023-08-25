@@ -1,0 +1,33 @@
+{
+  "name": "charity-project",
+  "version": "1.0.0",
+  "description": "my charity system , with API from paypal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "ng tri",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.1",
+    "filehelper": "^1.0.5",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.5",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "paypal-rest-sdk": "^1.8.1",
+    "pdfkit": "^0.13.0",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,43 @@
+◙ Data base từ mongoose.
+- có 3 Models (hiện tại):
+- user được chia làm 2 dạng user admin và user bth
+- event để chứa các sự kiện đã khởi tạo
+- chat để chứa tất cả đoạn chat
+
+
+◙ Chức năng đăng ký người dùng mới
+◙ Chức năng đăng nhập và Kiểm soát truy cập
+◙ Quản lý đợt quyên góp (Entity 1)
+◙ Thêm/Cập nhật đợt quyên góp
+◙ Quản lý người dùng
+◙ Thêm/cập nhật người dùng
+◙ Thực hiện việc quyên góp(Entity 2)
+◙ Quản lý lịch sử các lần quyên góp (Entity 2)
+◙ Trang Landing Page
+◙ Một số chức năng mở rộng khác .
+
+
+▬▬Yêu cầu chức năng :
+◙ Dễ sử dụng
+◙ Đáng tin cậy
+◙ Hiệu năng
+
+▬▬Thiết kế kiến trúc
+◙ Các thành phần trong ứng dụng
+◙ Tổ chức CODE
+◙ Quy ước viết CODE
+
+▬▬ Thiết kế dữ liệu
+◙ Lược đồ CSDL
+◙ Liệt kê danh sách các bản dữ liệu
+◙ Chi tiết từng bảng dữ liệu
+
+▬▬Hướng Dẫn sử dụng
+◙Danh sách chức năng dành cho USER
+◙Danh sách chức năng dành cho Management (Admin)
+◙ Chức năng:
+
+▬▬ Cài đặt ứng dụng
+◙Cài đặt database
+◙Cài đặt Server
+◙Cài đặt WebApp

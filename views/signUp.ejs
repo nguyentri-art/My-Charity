@@ -1,0 +1,21 @@
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="signUp__container">
+                <form method="POST">
+                    <div class="form__signUp">
+                        <label for="email__signUp">Email address</label>
+                        <input type="text" id="email__signUp" name="email__signUp" placeholder="Email">
+                        <label for="password__signUp">Password</label>
+                        <input type="password" id="password__signUp" name="password__signUp" placeholder="Password">
+                        <label for="userName__signUp">Name</label>
+                        <input type="text" id="userName__signUp" name="userName__signUp">
+                        <label for="userLocation__signUp">Location</label>
+                        <input type="text" id="userLocation__signUp" name="userLocation__signUp">
+                        <button type="submit">Enter</button>
+                    </div>
+                </form>
+            </div>
+            <%- include('./end.ejs') %>

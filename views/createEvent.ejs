@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../css/createEvent.css">
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="container__createEvent">
+                <form class="form__createEvent" method="POST" action="createEvent">
+                    <h2>Create <span>E</span>vent</h2>
+                    <label id="nameEvent" for="nameEvent">Name Event:</label>
+                    <input type="text" name="nameEvent">
+                    <label id="imageEvent" for="imageEvent">Image Event (URL)</label>
+                    <input type="text" name="imageEvent">
+                    <label id="locationEvent" for="locationEvent">Location Event</label>
+                    <input type="text" name="locationEvent">
+                    <label id="descriptionEvent" for="descriptionEvent">Description Event</label>
+                    <input type="text" name="descriptionEvent">
+                    <label id="totalMoney" for="totalMoney">Total Money $</label>
+                    <input type="number" name="totalMoney" min="1000" step="any">
+                    <label id="timeAction" for="timeAction">Time Action</label>
+                    <input type="date" name="timeAction">
+                    <label id="teamAction" for="teamAction">Team Volunteer</label>
+                    <input type="text" name="teamAction">
+                    <button type="submit" class="submitCreater">Create</button>
+                </form>
+            </div>
+            <%- include('./end.ejs') %>

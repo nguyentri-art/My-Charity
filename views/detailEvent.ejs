@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="../css/createEvent.css">
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="detailDonation__container">
+                <div class="detailDonation__box">
+                    <div class="detailDonation__content">
+                        <h3>Name Event : <p>
+                                <%= prods.nameEvent %>
+                            </p>
+                        </h3>
+                        <h3>Image Event: </h3>
+                        <image src="<%= prods.imageUrl %>" />
+                        <h3>Location Event :<p>
+                                <%= prods.locationEvent %>
+                            </p>
+                        </h3>
+                        <h3>Description: <p>
+                                <%= prods.description %>
+                            </p>
+                        </h3>
+                        <h3>Money We Need:<p>
+                                <%= prods.totalMoney %><span>$</span>
+                            </p>
+                        </h3>
+                        <h3>Creater Event ID: <p>
+                                <%= prods.createrEvent %>
+                            </p>
+                        </h3>
+                        <h3>Time Action:<p>
+                                <%= prods.timeAction %>
+                            </p>
+                        </h3>
+                        <h3>TeamAction:<p>
+                                <%= prods.teamAction %>
+                            </p>
+                        </h3>
+                        <div class="update__button">
+                            <% if(isAdmin) { %>
+                                <a href="/updateDonation/<%= prods._id %>">Update</a>
+                                <%} %>
+                        </div>
+                        <div class="update__button">
+                            <form action="/pay" method="POST">
+                                <div class="value_donation">
+                                    <label>
+                                        <h2>Money you want to donnation</h2>
+                                        <h2>Số tiền bạn muốn Donation </h2>
+                                    </label>
+                                    <input type="number" name="moneyDonation" min="5" max="10000"
+                                        value="10"><span>$</span>
+                                    <p>Minimum 5$ of donation</p>
+                                </div>
+                                <input type="hidden" name="eventId" value="<%= eventId %>">
+                                <input type="submit" value="DONATION">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="detailDonation__tutorial">
+                        <h3>Donation at this account paypal: ©</h3>
+                        <h3>Your donation should have a name same with name account your create</h3>
+                        <h3>Every detail of your donation will show up as History Event</h3>
+                    </div>
+                </div>
+            </div>
+            <%- include('./end.ejs') %>

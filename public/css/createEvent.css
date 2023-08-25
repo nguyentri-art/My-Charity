@@ -1,0 +1,123 @@
+.container__createEvent {
+    background-image: url("/images/galaxy-3114462.jpeg");
+    background-size: cover;
+}
+
+.form__createEvent {
+    padding-top: 400px;
+    padding-bottom: 400px;
+    display: grid;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.form__createEvent label {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form__createEvent input {
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form__createEvent button {
+    margin: 50px 300px;
+    border-radius: 30px;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form__createEvent button:hover {
+    background-color: rgb(88, 86, 86);
+    color: white;
+}
+
+.form__createEvent h2 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    padding-bottom: 200px;
+}
+
+.form__createEvent span {
+    color: rgb(252, 8, 49);
+}
+
+/* thanks to Donation */
+.container_thanks {
+    background-image: url("/images/toYourDoor.jpg");
+    background-size: cover;
+}
+
+.thanksTo {
+    padding: 200px 40px 500px 40px;
+    text-align: center;
+}
+
+h1 {
+    margin: 50px 50px;
+    font-size: 60px;
+    color: rgb(238, 238, 238);
+}
+
+h1 span {
+    color: rgb(255, 0, 8);
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.thanksTo p {
+    font-size: 20px;
+    color: rgb(255, 1, 1);
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+/*-end-Donation--*/
+
+/*--detailEvent-*/
+.value_donation input {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.value_donation input::-webkit-outer-spin-button,
+.value_donation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.value_donation span {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    padding-left: 10px
+}
+
+.value_donation p {
+    color: white;
+    font-weight: 500;
+}
+
+.value_donation h2 {
+    padding-top: 20px;
+    color: red;
+}
+
+.detailDonation__content h3{
+    color:rgb(243, 128, 47);
+}
+
+
+/* -- end-detailEvent-*/

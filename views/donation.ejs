@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="../css/donation.css">
+<%- include('./head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <div class="donation__container">
+                <div class="banner__Duration">
+                    <video autoplay muted loop id="myVideoDonation">
+                        <source src="/images/donation__banner.mp4" type="video/mp4" />
+                    </video>
+                    <div class="content__banner">
+                        <h1><span>D</span>onation</h1>
+                        <p>A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may
+                            take
+                            various forms, including money, alms, services, or goods such as clothing, toys, food, or
+                            vehicles. A donation may satisfy medical needs such as blood or organs for transplant.</p>
+                        <h2>List <span>.</span>Event Donation</h2>
+                        <div class="donation__box">
+                            <% for(let event of prods) { %>
+                                <div class="donation__event">
+                                    <img src="<%= event.imageUrl %>">
+                                    <h4>Name Event: <b>
+                                            <%=event.nameEvent %>
+                                        </b> </h4>
+                                    <h4>Location: <b>
+                                            <%= event.locationEvent %>
+                                        </b></h4>
+                                    <h4>Description:<b>
+                                            <%= event.description %>
+                                        </b></h4>
+                                    <h4>Money We Need:<b>
+                                            <%= event.totalMoney%>
+                                        </b> $</h4>
+                                    <h4>Creater Event:<b>
+                                            <%= event.createrEvent %>
+                                        </b> </h4>
+                                    <% if(user){ %>
+                                        <a href="/detailDonation/<%= event._id %>">Donation</a>
+                                        <% } %>
+                                </div>
+                                <% } %>
+                        </div>
+                        <div class="donation__chatBox">
+                            <h2>Let talking with philanthropists like <span>Y</span>ou</h2>
+                            <div class="donation__chatting">
+                                <h4>Name User</h4>
+                                <p>Wow this is awesome</p>
+                                <h4>News User</h4>
+                                <p>Yea, i donat 2million $ for this </p>
+                            </div>
+
+                            <% if(user){ %>
+                                <div class="donation__inputChat">
+                                    <form method="POST">
+                                        <label for="donation__input">Have any comments?</label>
+                                        <input type="text" name="donation__input" id="donation__input">
+                                    </form>
+                                    <button type="submit" name="donation__input">Send</button>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="donation__box">
+                    <div class="donation__event">
+                        <p>A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may
+                            take
+                            various forms, including money, alms, services, or goods such as clothing, toys, food, or
+                            vehicles. A donation may satisfy medical needs such as blood or organs for transplant.</p>
+                    </div>
+                </div>
+                <div class="donation__chatBox">
+                    <div class="donation__showChat">
+
+                    </div>
+                    <div class="donation__chatting">
+
+                    </div>
+                </div> -->
+            </div>
+            <%- include('./end.ejs') %>

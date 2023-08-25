@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="../css/updateDonation.css">
+<%- include('./head.ejs') %>
+        </head>
+
+        <body>
+                <%- include('./navigation.ejs') %>
+                        <div class="detailDonation__container">
+                                <div class="detailDonation__box">
+                                        <form method="POST">
+                                                <div class="detailDonation__content">
+                                                        <input type="hidden" name="eventId" value="<%= prods._id %>">
+                                                        <h3>Name Event : <input class="input__Event" type="text"
+                                                                        name="nameEvent"
+                                                                        value=" <%= prods.nameEvent %>">
+
+                                                        </h3>
+                                                        <h3>Image Url: </h3>
+                                                        <input class="input__Event" type="text" name="imageUrl"
+                                                                value="<%= prods.imageUrl %>" />
+
+                                                        <h3>Location Event :<input class="input__Event" type="text"
+                                                                        name="locationEvent"
+                                                                        value="<%= prods.locationEvent %>" />
+                                                        </h3>
+                                                        <h3>Description: <input class="input__Event" type="text"
+                                                                        name="description"
+                                                                        value="<%= prods.description %>" />
+
+                                                        </h3>
+                                                        <h3>Money We Need:<input class="input__Event" type="number"
+                                                                        name="totalMoney"
+                                                                        value="<%= prods.totalMoney %>" />
+                                                                <span>$</span>
+
+                                                        </h3>
+                                                        <h3>Creater Event ID:
+                                                                <p>
+                                                                        <%= prods.createrEvent %>
+                                                                </p>
+
+
+                                                        </h3>
+                                                        <h3>Time Action:<input class="input__Event" type="date"
+                                                                        name="timeAction"
+                                                                        value="<%=prods.timeAction %>">
+                                                        </h3>
+                                                        <h3>TeamAction:<input class="input__Event" type="text"
+                                                                        name="teamAction"
+                                                                        value="<%= prods.teamAction %>">
+                                                        </h3>
+                                                        <button type="submit">Update</button>
+                                        </form>
+                                </div>
+                        </div>
+                        </div>
+                        <%- include('./end.ejs') %>
